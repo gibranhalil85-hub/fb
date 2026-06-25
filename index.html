@@ -1,5 +1,5 @@
-
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -22,8 +22,6 @@ html,body{
   color:#fff;
 }
 
-/* BACKGROUND */
-
 body::before{
   content:"";
   position:fixed;
@@ -34,8 +32,6 @@ body::before{
   z-index:-1;
 }
 
-/* PAGE */
-
 .page{
   width:100%;
   max-width:480px;
@@ -43,8 +39,6 @@ body::before{
   min-height:100vh;
   padding-bottom:50px;
 }
-
-/* HEADER */
 
 .header{
   padding:18px;
@@ -66,19 +60,15 @@ body::before{
   font-size:13px;
 }
 
-/* VIDEO CARD */
-
 .video-card{
   margin:12px;
   background:#111;
   border-radius:24px;
   overflow:hidden;
   box-shadow:
-  0 0 0 1px rgba(255,255,255,0.05),
-  0 20px 40px rgba(0,0,0,0.45);
+  0 0 0 1px rgba(255,255,255,.05),
+  0 20px 40px rgba(0,0,0,.45);
 }
-
-/* VIDEO */
 
 .video-box{
   position:relative;
@@ -104,8 +94,6 @@ video{
   pointer-events:none;
 }
 
-/* BADGE */
-
 .badge{
   position:absolute;
   top:12px;
@@ -116,72 +104,8 @@ video{
   font-size:12px;
   font-weight:700;
   z-index:5;
-  box-shadow:0 5px 15px rgba(255,0,102,0.4);
+  box-shadow:0 5px 15px rgba(255,0,102,.4);
 }
-
-/* INFO */
-
-.video-info{
-  padding:16px;
-}
-
-.video-title{
-  font-size:20px;
-  font-weight:700;
-  line-height:1.4;
-}
-
-.video-desc{
-  margin-top:10px;
-  color:#aaa;
-  font-size:14px;
-  line-height:1.6;
-}
-
-.stats{
-  display:flex;
-  gap:14px;
-  margin-top:14px;
-  color:#ccc;
-  font-size:13px;
-  flex-wrap:wrap;
-}
-
-/* BUTTONS */
-
-.actions{
-  display:flex;
-  gap:10px;
-  margin-top:18px;
-}
-
-.btn{
-  flex:1;
-  border:none;
-  border-radius:16px;
-  padding:15px;
-  font-size:15px;
-  font-weight:700;
-  cursor:pointer;
-  transition:0.25s;
-}
-
-.btn-primary{
-  background:linear-gradient(135deg,#ff2f6d,#ff0066);
-  color:#fff;
-  box-shadow:0 10px 25px rgba(255,0,102,0.35);
-}
-
-.btn-primary:hover{
-  transform:translateY(-2px);
-}
-
-.btn-secondary{
-  background:#1b1b1b;
-  color:#fff;
-}
-
-/* SECTION */
 
 .section-title{
   padding:18px 16px 10px;
@@ -189,14 +113,12 @@ video{
   font-weight:700;
 }
 
-/* ADS */
-
 .ads-card{
   margin:12px;
   background:#121212;
   border-radius:20px;
   padding:14px;
-  border:1px solid rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,.05);
   overflow:hidden;
 }
 
@@ -208,8 +130,6 @@ video{
   letter-spacing:1px;
 }
 
-/* FOOTER */
-
 .footer{
   text-align:center;
   color:#666;
@@ -217,131 +137,130 @@ video{
   padding:30px 15px;
 }
 
-/* MOBILE */
-
 @media(max-width:480px){
-
-.video-title{
-  font-size:18px;
-}
-
+  .logo{
+    font-size:22px;
+  }
 }
 
 </style>
+
 </head>
 
 <body>
 
 <div class="page">
 
-<!-- HEADER -->
+  <div class="header">
+    <div class="logo">
+      FOUND <span>YOUR GIRL</span>
+    </div>
 
-<div class="header">
-
-<div class="logo">
-FOUND <span>YOUR GIRL</span>
-</div>
 
 <div class="sub">
-Watch trending viral videos everyday 🔥
+  Watch trending viral videos everyday 🔥
 </div>
 
-</div>
 
-<!-- VIDEO CARD -->
+  </div>
 
-<div class="video-card">
+  <div class="video-card">
+
 
 <div class="video-box">
 
+  <div class="badge">
+    HOT 🔥
+  </div>
+
+  <video
+    id="player"
+    controls
+    autoplay
+    muted
+    playsinline
+    preload="metadata"
+    poster="https://via.placeholder.com/480x720?text=Loading..."
+    controlsList="nodownload noremoteplayback"
+    disablePictureInPicture>
+
+    <source id="videoSource" src="" type="video/mp4">
+
+  </video>
+
 </div>
 
-<video
-id="player"
-controls
-autoplay
-muted
-playsinline
-preload="metadata"
-poster="https://via.placeholder.com/480x720?text=Loading..."
-controlsList="nodownload noremoteplayback"
-disablePictureInPicture
->
 
-<source id="videoSource" src="" type="video/mp4">
+  </div>
 
-</video>
+  <div class="section-title">
+    🔥 Trending Videos
+  </div>
 
-</div>
+  <div class="ads-card">
 
-<!-- TRENDING -->
-
-<div class="section-title">
-🔥 Trending Videos
-</div>
-
-<!-- NATIVE ADS -->
-
-<div class="ads-card">
 
 <div class="ads-label">
-Sponsored
+  Sponsored
 </div>
 
-<script async="async"
-data-cfasync="false"
-src="https://brewdismaychest.com/aa07e5156e3bde06cc9c46c75653774f/invoke.js">
+<script async
+  data-cfasync="false"
+  src="https://brewdismaychest.com/aa07e5156e3bde06cc9c46c75653774f/invoke.js">
 </script>
 
 <div id="container-aa07e5156e3bde06cc9c46c75653774f"></div>
 
-</div>
 
-<!-- BANNER -->
+  </div>
 
-<div class="ads-card">
+  <div class="ads-card">
+
 
 <div class="ads-label">
-Advertisement
+  Advertisement
 </div>
 
 <script>
-atOptions = {
-'key' : '43d32f3264c4bf7923379562345f0c1f',
-'format' : 'iframe',
-'height' : 250,
-'width' : 300,
-'params' : {}
-};
+  atOptions = {
+    'key' : '43d32f3264c4bf7923379562345f0c1f',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
 </script>
 
 <script src="https://brewdismaychest.com/43d32f3264c4bf7923379562345f0c1f/invoke.js"></script>
 
+
+  </div>
+
+  <div class="footer">
+    © 2026 Found Your Girl
+  </div>
+
 </div>
 
-<!-- FOOTER -->
-
-/* =========================
-   VIDEO PARAM
-========================= */
+<script>
 
 const params = new URLSearchParams(window.location.search);
 
 let video = params.get("v");
 
-if (video) {
+if(video){
 
-if (!video.startsWith("http")) {
-video = "https://cdn.videy.co/" + video;
-}
+  if(!video.startsWith("http")){
+    video = "https://cdn.videy.co/" + video;
+  }
 
-if (!video.endsWith(".mp4")) {
-video = "https://cdn.videy.co/k84OOz1w1.mp4";
-}
+  if(!video.endsWith(".mp4")){
+    video = "https://cdn.videy.co/k84OOz1w1.mp4";
+  }
 
-} else {
+}else{
 
-video = "https://cdn.videy.co/k84OOz1w1.mp4";
+  video = "https://cdn.videy.co/k84OOz1w1.mp4";
 
 }
 
@@ -354,31 +273,25 @@ player.load();
 
 player.play().catch(() => {});
 
-/* DISABLE RIGHT CLICK */
-
-player.addEventListener("contextmenu", e => e.preventDefault());
-
-/* =========================
-   POPUNDER
-========================= */
-
-player.addEventListener("click", function () {
-
-if (!window.popShown) {
-
-window.popShown = true;
-
-var s = document.createElement("script");
-
-s.src = "https://brewdismaychest.com/d2/7a/b4/d27ab410a890f87de3cd808380b844c8.js";
-
-document.body.appendChild(s);
-
-}
-
+player.addEventListener("contextmenu", function(e){
+  e.preventDefault();
 });
 
-})();
+player.addEventListener("click", function(){
+
+  if(!window.popShown){
+
+    window.popShown = true;
+
+    var s = document.createElement("script");
+
+    s.src = "https://brewdismaychest.com/d2/7a/b4/d27ab410a890f87de3cd808380b844c8.js";
+
+    document.body.appendChild(s);
+
+  }
+
+});
 
 </script>
 
